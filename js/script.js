@@ -9,7 +9,7 @@
 
 
 // Create the printQuote funtion and name it printQuote
-
+function printQuote() {}
 
 
 // This event listener will respond to "Show another quote" button clicks
