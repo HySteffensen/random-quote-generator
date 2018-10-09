@@ -1,0 +1,18 @@
+# Mac OS X
+.DS_Store
+
+# Intellij
+.idea
+*.iml
+
+# generated files
+generated/
+
+# Scratch
+scratch.txt
+
+# vs code
+.vscode
+
+# dolphin
+.directory
