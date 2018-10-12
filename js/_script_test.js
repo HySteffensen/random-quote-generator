@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    var assert = require("../vendor/chai-v4.1.2").assert;
+    var assert = require("./assert");
 
     describe("TEST", function() {
         it("makes a test", function() {
