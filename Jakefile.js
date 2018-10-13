@@ -3,6 +3,7 @@
 
     var linter = require("simplebuild-jshint");
     var karma = require("simplebuild-karma");
+    var KARMA_CONFIG = "karma.conf.js";
 
     desc("Default");
     task("default", [ "lint" ], function() {
@@ -58,14 +59,14 @@
     task("karma", function() {
         console.log("Starting Karma server:");
         karma.start({
-            configFile: karma.conf.js
+            configFile: KARMA_CONFIG
         }, complete, fail);
     }, { async: true });
 
     desc("Run Tests");
     task("test", function() {
         karma.run({
-            configFile: karma.conf.js
+            configFile: KARMA_CONFIG
         }, complete, fail);
     }, { async: true });                
 
