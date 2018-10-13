@@ -67,7 +67,7 @@
         karma.run({
             configFile: karma.conf.js
         }, complete, fail);
-    }, { async: true });
+    }, { async: true });                
 
 
 
