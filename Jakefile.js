@@ -2,6 +2,7 @@
     "use strict";
 
     var linter = require("simplebuild-jshint");
+    var karma = require("simplebuild-karma");
 
     desc("Default");
     task("default", [ "lint" ], function() {
@@ -53,7 +54,20 @@
         }, complete, fail);
     }, { async: true });
 
+    desc("Run Karma");
+    task("karma", function() {
+        console.log("Starting Karma server:");
+        karma.start({
+            configFile: karma.conf.js
+        }, complete, fail);
+    }, { async: true });
 
+    desc("Run Tests");
+    task("test", function() {
+        karma.run({
+            configFile: karma.conf.js
+        }, complete, fail);
+    }, { async: true });
 
 
 
