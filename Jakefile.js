@@ -65,8 +65,10 @@
 
     desc("Run Tests");
     task("test", function() {
+        console.log("Testing JavaScript:");
         karma.run({
-            configFile: KARMA_CONFIG
+            configFile: KARMA_CONFIG,
+            strict: !process.env.loose
         }, complete, fail);
     }, { async: true });                
 
