@@ -1,17 +1,23 @@
-// FSJS - Random Quote Generator
+(function() {
+    "use strict";
+        
+    // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
-
-
-
-// Create the getRandomQuuote function and name it getRandomQuote
-
+    // Create the array of quote objects and name it quotes
 
 
-// Create the printQuote funtion and name it printQuote
-function printQuote() {}
+
+    // Create the getRandomQuuote function and name it getRandomQuote
 
 
-// This event listener will respond to "Show another quote" button clicks
-// when user clicks anywhere on the button, the "printQuote" function is called
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+
+    // Create the printQuote funtion and name it printQuote
+    function printQuote() {}
+
+
+    // This event listener will respond to "Show another quote" button clicks
+    // when user clicks anywhere on the button, the "printQuote" function is called
+    exports.initialize = function initialize() {
+        document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+    }
+}());
